@@ -1,0 +1,7 @@
+bin/
+*.class
+books.txt
+users.txt
+.settings/
+.project
+.classpath
