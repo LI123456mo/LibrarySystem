@@ -47,6 +47,7 @@ public class LibraryServices {
             book.setBorrowed(false);
             user.getBorrowedBooks().remove(book);
             System.out.println(user.getUserName()+" Succesfully returned "+ book.getTittle());
+            return;
         }
         System.out.println("Error:User / book not found");
     }

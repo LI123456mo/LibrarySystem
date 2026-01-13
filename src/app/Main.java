@@ -62,9 +62,9 @@ public class Main {
 
                     case 3:
                         System.out.print("Enter User ID: ");
-                        String uId = sc.nextLine();
+                        String uId = sc.nextLine().trim();
                         System.out.print("Enter Book ID to borrow: ");
-                        String bId = sc.nextLine();
+                        String bId = sc.nextLine().trim();
                         
                         // Check if user exists, if not, create one
                         if (library.getAllUsers().get(uId) == null) {
@@ -76,9 +76,9 @@ public class Main {
 
                     case 4:
                         System.out.print("Enter User ID: ");
-                        String retUId = sc.nextLine();
+                        String retUId = sc.nextLine().trim();
                         System.out.print("Enter Book ID to return: ");
-                        String retBId = sc.nextLine();
+                        String retBId = sc.nextLine().trim();
                         library.returnBook(retUId, retBId);
                         break;
 
